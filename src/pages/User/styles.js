@@ -1,0 +1,84 @@
+import styled from 'styled-components/native';
+
+export const Container = styled.View`
+  flex: 1;
+  padding: 30px;
+  background: #282a36;
+`;
+
+export const Header = styled.View`
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom-width: 1px;
+  border-color: #44475a;
+`;
+
+export const Avatar = styled.Image`
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: #eee;
+`;
+
+export const Name = styled.Text`
+  font-size: 20px;
+  color: #ff79c6;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+`;
+
+export const Bio = styled.Text`
+  font-size: 14px;
+  line-height: 20px;
+  color: #8be9fd;
+  margin-top: 5px;
+  text-align: center;
+`;
+
+export const Loading = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Stars = styled.FlatList.attrs({
+  showsVerticalScrollIndicator: false,
+})`
+  margin-top: 20px;
+`;
+
+export const Starred = styled.TouchableOpacity`
+  background: #44475a;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const OwnerAvatar = styled.Image`
+  height: 42px;
+  width: 42px;
+  border-radius: 21px;
+  background: #eee;
+`;
+
+export const Info = styled.View`
+  flex: 1;
+  margin-left: 10px;
+`;
+
+export const Title = styled.Text.attrs({
+  numberOfLines: 1,
+})`
+  font-size: 15px;
+  font-weight: bold;
+  color: #50fa7b;
+`;
+
+export const Author = styled.Text`
+  font-size: 13px;
+  color: #f1fa8c;
+  margin-top: 2px;
+`;
